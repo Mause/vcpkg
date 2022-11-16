@@ -1,0 +1,12 @@
+# Download the code from GitHub
+vcpkg_from_github(
+  OUT_SOURCE_PATH SOURCE_PATH
+  REPO duckdb/duckdb
+  REF v0.6.0
+  SHA512 4d7065d9e489e5c4e07ecb6bfba8396acf8a882e43d00d0fe6ffb230dbf9e340de1aa29202820334030c8603c0143d5c2467be0ac67dde37027ae75776713495
+  HEAD_REF master
+)
+
+file(INSTALL ${SOURCE_PATH}/src/include DESTINATION ${CURRENT_PACKAGES_DIR}/include)
+
+file(INSTALL ${SOURCE_PATH}/LICENSE DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT} RENAME copyright)
