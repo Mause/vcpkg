@@ -1,0 +1,5 @@
+{
+  "name": "duckdb",
+  "version-date": "2022-11-14",
+  "description": "DuckDB is an in-process SQL OLAP database management system"
+}
